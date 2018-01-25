@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Binance Enhancement Suite</title>
+    <style type="text/css">
+      body {
+        margin: 20px;
+        width: 300px;
+      }
+
+      h1 {
+        font-size: 15px;
+        font-weight: 450;
+        text-align:center;
+      }
+
+      h2 {
+        font-size: 14px;
+        font-weight:500;
+        margin-top:5px;
+        margin-bottom:7px;
+      }
+
+      .divInline{
+        display:inline;
+      }
+
+      #container {
+        align-items: center;
+        display: flex;
+      }
+
+      #icon{
+        position:absolute;
+        top:35px;
+        left:30px;
+      }
+
+      #h1Sub{
+        font-size:.85em;
+        font-weight:400;
+      }
+
+      #addresses{
+        padding-left:20px;
+      }
+
+      #addresses li{
+        padding-bottom: 5px;
+        font-size:.9em;
+      }
+
+    </style>
+    <script src="jquery-3.3.1.slim.min.js"></script>
+    <script src="constants.js"></script>
+    <script src="popup.js"></script>
+  </head>
+
+  <body>
+    <img id="icon" SRC="icon.png" WIDTH=32 HEIGHT=32>
+    <div class="divInline">
+      <h1>Binance <br> Enhancement Suite <br> <span id="h1Sub">Version 0.1 (Beta)</span></h1>
+    </div>
+    <hr>
+    <div id="as">
+      <h2>Options</h2>
+      <span>Display balances in USD &nbsp; </span>
+      <input id="checkBoxUSD" type="checkbox">
+      <br>
+      <br>
+      <span>(Refresh page to see changes)</span>
+    </div>
+    <hr>
+    <div id="about">
+    <h2>About</h2>
+    Features (Version 0.1):
+    <ul>
+      <li>Sort coins in portfolio by value</li>
+      <li>Optionally display coin balances as USD</li>
+      <li>Customize minimum coin balance to display</li>
+    </ul>
+    To request new features, leave feedback, or report a bug, please shoot me an email at <a href="mailto:wherearethefaces@gmail.com">wherearethefaces@gmail.com</a>.
+    </br>
+    </br>
+    Note: this extension is <strong>unofficial</strong> and is <strong>not</strong> affiliated with Binance.
+    </div>
+    <hr>
+    <div id="donations">
+    <h2>Contribute</h2>
+    If you'd like to say thanks or contribute to future development, feel free to send a tip :)
+    <ul id="addresses">
+      <li>BTC: 136KubtHNdXsm5mvdte21sDCSChwz9DJtf</li>
+      <li>ETH: 0xfB51615E17287F67CE4d2e3A1485E0FB55fDb30a</li>
+      <li>LTC: LRCgqHiafDbemmB4bJUXd9aquuxnu9huzV</li>
+    </ul>
+    </div>
+  </body>
+</html>

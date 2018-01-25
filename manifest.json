@@ -1,0 +1,29 @@
+{
+    "name": "Binance Enhancement Suite",
+    "description": "UI enhancements for the Binance cryptocurrency exchange.  This extension is UNOFFICIAL and is NOT affiliated with Binance.",
+    "version": "0.1",
+    "permissions": [
+    "activeTab",
+    "storage"
+    ],
+    "icons": { 
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png" 
+    },
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+        "matches": [
+            "https://www.binance.com/userCenter/balances.html"
+            ],
+        "css": ["balances.css"],
+        "js": ["jquery-3.3.1.slim.min.js","constants.js","currency.js","sort.js","filter.js"],
+        "run_at": "document_end"
+        }
+    ], 
+    "manifest_version":2
+}
