@@ -30,7 +30,6 @@ function setBalancesUSD(){
 }
 
 $(window).on('load', function () {
-
 	//check storage to see if user wants usd instead of btc
 	  chrome.storage.sync.get([S_CURRENCY], function(items){
 	    if (items[S_CURRENCY] == USD) {

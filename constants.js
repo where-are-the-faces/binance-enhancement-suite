@@ -12,6 +12,7 @@ const CLASS_ARROW = "icon-die";
 
 const ARROW_DOWN = "\u25BC";
 const ARROW_UP = "\u25B2";
+const PIE_SYMBOL = "\u25D4";
 
 const USD = "usd";
 const BTC = "btc";
