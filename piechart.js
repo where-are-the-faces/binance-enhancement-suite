@@ -123,7 +123,7 @@ function createPopup(){
 
 	$('<img/>',{
 		id:PIE_LOGO,
-		src:chrome.extension.getURL('icon.png'),
+		src:chrome.extension.getURL('images/icon.png'),
 		width:'22px',
 		height:'22px',
 		css: {
